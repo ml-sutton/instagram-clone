@@ -1,4 +1,6 @@
 "use server";
+import "server-only"
+
 import { db } from "@/db/drizzle";
 import { Profile } from "@/db/schema";
 import { eq } from "drizzle-orm";
