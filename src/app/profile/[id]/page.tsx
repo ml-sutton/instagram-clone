@@ -15,7 +15,7 @@ interface ProfilePageProps {
 
 
 export default async function ProfilePage({ params }: ProfilePageProps) {
-  const { id } = params
+  const { id } = await params
   const profileData = await DoesExist(id);
   const authStatus = (await auth()).userId;
   return (

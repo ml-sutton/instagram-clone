@@ -12,7 +12,7 @@ export default function Header() {
   const { isSignedIn, user } = useUser();
   return (
     <header className="w-screen flex items-center justify-center py-4 px-6 md:px-16 bg-slate-300 dark:bg-slate-900 text-slate-950 dark:text-slate-100">
-      <div className="mr-auto">{!isInRoot && <button>Back</button>}</div>
+      <div className="mr-auto">{!isInRoot && <Link href="/">Back</Link>}</div>
       <h1 className="text-4xl italic">Postify</h1>
       <div className="ml-auto  flex flex-row gap-2 justify-center items-center">
         <Link href="/posts/create">
