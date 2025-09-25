@@ -1,3 +1,4 @@
+import { PostCard } from "@/app/_components/posts/postcard";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
@@ -9,7 +10,7 @@ export default async function CreatePostPage() {
 
   return (
     <div className="">
-      {userID}
+      <PostCard />
     </div>
   )
 }
