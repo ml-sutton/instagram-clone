@@ -2,7 +2,7 @@ import { db } from "@/db/drizzle"
 import { Post, PostType, Profile, ProfileType } from "@/db/schema"
 import { desc, eq } from "drizzle-orm"
 import "server-only"
-type FeedPost = {
+export type FeedPost = {
   post: PostType;
   profile: ProfileType | null
 }
